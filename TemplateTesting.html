@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Template for now</title>
+        <!-- <link rel="stylesheet" href="css(Testing).css"> -->
+        <link rel="stylesheet" href="csscopyTesting1.css">
+        <link rel="stylesheet" href="jquery.pagepiling.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+        <div class="container-navbar">
+            <div class="navbar">
+                <img src="Images/Logo.png" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="logo-text">Darbaar</a></li>
+                        <li><a href="#">Darbaar</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </head>
+    <body>
+        <div id="pagepiling">
+            <div class="section sec1"><h2>Video</h2>
+                
+            </div>
+            <div class="section sec2"><h2>Darbaar</h2>
+                <p>We will have the Darbaar page here</p>
+            </div>
+            <div class="section sec3"><h2>Discover</h2>
+            
+            </div>
+            <div class="section sec4"><h2>Live count</h2>
+
+            </div>
+            <div class="section sec5"><h2>Join us</h2>
+
+            </div>
+        </div>
+        
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="jquery.pagepiling.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#pagepiling').pagepiling({
+                    navigation: {
+                        'textColor': '#000',
+                        'bulletsColor': '#000',
+                        'position': 'right',
+                        'tooltips': ['Landing Page', 'Darbaar', 'Discover', 'Member Count' , 'Join Us']
+                    },
+                });
+            });
+        </script>
+    </body>
+</html>
